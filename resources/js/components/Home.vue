@@ -135,6 +135,7 @@
                 });
             },
             Track(google_tag) {
+                alert(google_tag)
                 this.$gtag.event('page_view', {
                     page_title: google_tag
                 });
