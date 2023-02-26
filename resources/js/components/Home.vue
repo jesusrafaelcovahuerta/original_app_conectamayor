@@ -145,8 +145,6 @@
                     page_title: google_tag
                 });
 
-                alert(1)
-
                 window.location.href = 'tel:' + number;
             },
             hideModal() {
