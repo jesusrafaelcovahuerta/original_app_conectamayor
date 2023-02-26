@@ -24,8 +24,8 @@
                         </router-link>
                     </div>
                     <div v-if="post.section_id == 69">
-                        <a @click.native="Track(post.google_tag)" class="boton2" :style="{ background: post.color}" :href="`tel:${'+226043712'}`" >
-                            <font class="section_title">Salcobrand</font><br><center><img style="width: 50px;" :src="'/../frontend/images/salcobrand-seeklogo.com.png'" alt=""></center>
+                        <a @click.native="Track(post.google_tag)" class="boton2" :style="{ background: post.color}" :href="`tel:${'226043712'}`" >
+                            <font class="section_title">{{ post.google_tag }}Salcobrand</font><br><center><img style="width: 50px;" :src="'/../frontend/images/salcobrand-seeklogo.com.png'" alt=""></center>
                         </a>
                     </div>
                     <div v-if="post.section_id == 70">
