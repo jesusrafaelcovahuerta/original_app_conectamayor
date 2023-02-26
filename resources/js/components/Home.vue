@@ -147,7 +147,7 @@
 
                 alert(1)
 
-                window.location.href = number;
+                window.location.href = 'tel:' + number;
             },
             hideModal() {
                 this.modalShow = false;
