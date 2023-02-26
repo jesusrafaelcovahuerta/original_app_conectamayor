@@ -24,7 +24,7 @@
                         </router-link>
                     </div>
                     <div v-if="post.section_id == 69">
-                        <a @click.native="goPhone('226043712',post.google_tag)" class="boton2" :style="{ background: post.color}" >
+                        <a v-on:click="goPhone('226043712',post.google_tag)" class="boton2" :style="{ background: post.color}" >
                             <font class="section_title">Llama a Salcobrand</font><br><center><img style="width: 50px;" :src="'/../frontend/images/salcobrand-seeklogo.com.png'" alt=""></center>
                         </a>
                     </div>
@@ -144,6 +144,8 @@
                 this.$gtag.event('page_view', {
                     page_title: google_tag
                 });
+
+                alert(1)
 
                 window.location.href = number;
             },
